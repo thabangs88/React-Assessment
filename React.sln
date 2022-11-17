@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortBDay", "React\SortBDay.csproj", "{DC2E1947-5BF4-49E5-A942-53C29E36A73E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging", "Logging\Logging.csproj", "{2A877E0A-F371-4C24-892E-6DC0DC14E270}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLogging", "TestLogging\TestLogging.csproj", "{63AB9DEF-4BF2-43A0-8699-426A449516E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC2E1947-5BF4-49E5-A942-53C29E36A73E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC2E1947-5BF4-49E5-A942-53C29E36A73E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC2E1947-5BF4-49E5-A942-53C29E36A73E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC2E1947-5BF4-49E5-A942-53C29E36A73E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A877E0A-F371-4C24-892E-6DC0DC14E270}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A877E0A-F371-4C24-892E-6DC0DC14E270}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A877E0A-F371-4C24-892E-6DC0DC14E270}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A877E0A-F371-4C24-892E-6DC0DC14E270}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63AB9DEF-4BF2-43A0-8699-426A449516E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63AB9DEF-4BF2-43A0-8699-426A449516E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63AB9DEF-4BF2-43A0-8699-426A449516E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63AB9DEF-4BF2-43A0-8699-426A449516E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC1B541E-FAEE-404F-8D53-3BB4BB3B7086}
+	EndGlobalSection
+EndGlobal
