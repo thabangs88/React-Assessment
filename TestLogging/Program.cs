@@ -11,6 +11,7 @@ namespace TestLogging
 {
     class Program
     {
+        [STAThread]
         static void Main(string[] args)
         {
             //1. First create an empty text file.
@@ -33,25 +34,29 @@ namespace TestLogging
                 ShowReadOnly = true
             };
 
-
-            var path = @"C:\Users\SibanyoniResidents\Documents\New Text Document.txt";
-            Logger logger = new Logger(path, EnumLogLevel.Info);
-
-            logger.Debug("Debug Message Test");
-            logger.Info("Info Message Test");
-            logger.Error("Error Message Test");
-
-            logger.Info("Demo of Logger Starting");
-
-            for (int i = 0; i < 5; i++)
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                logger.Info($"i = {i}");
+    
+                Logger logger = new Logger(openFileDialog1.FileName, EnumLogLevel.Info);
+
+                logger.Debug("Debug Message Test");
+                logger.Info("Info Message Test");
+                logger.Error("Error Message Test");
+
+                logger.Info("Demo of Logger Starting");
+
+                for (int i = 0; i < 5; i++)
+                {
+                    logger.Info($"i = {i}");
+                }
+
+                logger.Info("Demo of Logger Complete");
+
+                logger.Info("Logger Destroyed");
+
             }
 
-            logger.Info("Demo of Logger Complete");
-
-            logger.Info("Logger Destroyed");
-
+            Console.WriteLine("Demo of Logger Complete");
             Console.ReadLine();
         }
     }
